@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Океанаріум</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin: 10px;
+        }
+
+        table {
+            width: 100%;
+            background-color: #f2f2f2;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        table.menu {
+            width: 100%;
+            background-color: #008000;
+        }
+
+        table.menu td {
+            border: 0;
+            text-align: center;
+            padding: 8px;
+        }
+
+        table.menu a {
+            text-decoration: none;
+            color: white;
+        }
+
+        img {
+            border: 2px solid #000;
+            width: 450px;
+        }
+        table.schedule{
+            width:60%
+        }
+    </style>
+</head>
+<body>
+    <h1>Океанаріум</h1>
+
+    <table class="menu">
+        <tr>
+            <td><a href="index.html">Головна</a></td>
+            <td><a href="animals.html">Наші тварини</a></td>
+            <td><a href="schedule.html">Розклад виставок</a></td>
+            <td><a href="gallery.html">Галерея</a></td>
+            <td><a href="contact.html">Контакти</a></td>
+            <td><a href="excursions.html">Екскурсії</a></td>
+            <!-- Видалимо посилання на поточну сторінку -->
+            <!-- <td><a href="oceanarium1.html">Океанаріум</a></td> -->
+            <td><a href="support.html">Допомога зоопарку</a></td>
+            <td><a href="tickets.html">Замовити квитки</a></td>
+            <td><a href="guardians.html"Опікуни/a></td>
+        </tr>
+    </table>
+
+    <h2>Ласкаво просимо в наш Океанаріум!</h2>
+
+    <p>Океанаріум - це місце, де ви зможете роздивитися найрізноманітніші види морських і океанічних тварин. Ми запрошуємо вас на унікальну подорож у світ водних жителів.</p>
+    
+    <h2>Підписка на новини</h2>
+    <form action="subscribe.php" method="post">
+        <label for="email">Ваша електронна адреса:</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="Підписатися">
+    </form>
+
+    <h2>Наші експонати</h2>
+
+    <p>Океанаріум має широкий вибір екзотичних риб, морських черепах, коралових рифів та інших морських чудес. Ми забезпечимо вам можливість ближче познайомитися з цими дивовижними створіннями.</p>
+
+    <h2>Години роботи</h2>
+
+    <p>Океанаріум працює за таким графіком:</p>
+
+    <table class="schedule">
+        <tr>
+            <th>Пн-Пт</th>
+            <th>Сб-Нд</th>
+        </tr>
+        <tr>
+            <td>10:00 - 18:00</td>
+            <td>10:00 - 19:00</td>
+        </tr>
+    </table>
+    <h2>Ваш відгук</h2>
+    <form action="feedback.php" method="post">
+        <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+        <label for="feedback">Ваш відгук:</label>
+            <textarea id="feedback" name="feedback" rows="1" required></textarea>
+        <input type="submit" value="Відправити">
+    </form>
+    <h2>Фото з середини океанаріуму</h2>
+    <img src="../source/oceanarium1.png" alt="Океанаріум1">
+    <img src="../source/oceanarium2.png" alt="Океанаріум2">
+    <img src="../source/oceanarium3.png" alt="Океанаріум3">
+    <img src="../source/oceanarium4.png" alt="Океанаріум4">
+</body>
+</html>

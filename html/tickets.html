@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Замовити квитки</title>
+    <style>
+        table.menu {
+            width: 100%;
+            background-color: #008000;
+            color: white;
+            border-collapse: collapse;
+        }
+
+        table.menu td {
+            border: 0;
+            padding: 8px;
+            text-align: center;
+        }
+
+        table.menu a {
+            text-decoration: none;
+            color: white;
+        }
+
+        table.menu tr:last-child {
+            border-bottom: 5px solid #008000;
+        }
+
+        table.schedule th,
+        table.schedule td {
+            border: 1px solid #008000; /* Змінюємо колір рамки таблиці розкладу на синій */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Меню на сторінці "Замовити квитки" -->
+    <table class="menu">
+        <tr>
+            <td><a href="index.html">Головна</a></td>
+            <td><a href="animals.html">Наші тварини</a></td>
+            <td><a href="schedule.html">Розклад виставок</a></td>
+            <td><a href="gallery.html">Зображення</a></td>
+            <td><a href="contact.html">Контакти</a></td>
+            <td><a href="oceanarium.html">Океанаріум</a></td>
+            <td><a href="excursions.html">Екскурсії</a></td>
+            <td><a href="support.html">Допомога зоопарку</a></td>
+            <td><a href="guardians.html">Опікуни</a></td>
+        </tr>
+    </table>
+    <h1>Замовлення квитків</h1>
+
+    <p>Для того, щоб замовити квитки в наш зоопарк, виконайте такі дії:</p>
+
+    <ol>
+        <li>Виберіть кількість квитків, які ви хочете замовити.</li>
+        <li>Оберіть дату та час вашого візиту в зоопарк.</li>
+        <li>Заповніть необхідну інформацію у формі замовлення.</li>
+        <li>Натисніть кнопку "Відправити" для підтвердження замовлення.</li>
+        <li>Очікуйте на підтвердження та інструкції щодо оплати та відвідування зоопарку.</li>
+    </ol>
+
+    <h2>Форма замовлення квитків</h2>
+    <form action="#" method="post">
+        <label for="quantity">Кількість квитків:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required><br>
+        
+        <label for="visit-date">Дата візиту:</label>
+        <input type="date" id="visit-date" name="visit-date" required min="2023-10-10"><br>
+        
+        <label for="visit-time">Час візиту:</label>
+        <input type="time" id="visit-time" name="visit-time" required min="07:00" max="19:00" step="900"><br>
+
+        
+        <label for="name">Ваше ім'я:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Ваша адреса електронної пошти:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <button type="submit">Відправити</button>
+    </form>
+
+    <p>Дякуємо, що ви відвідали наш зоопарк!</p>
+</body>
+</html>
