@@ -4,72 +4,105 @@
     <meta charset="UTF-8">
     <title>Опікуни</title>
     <style>
-    ul {
-        list-style: none;
-        padding: 0;
-    }
 
-    li {
-        display: inline;
-        margin: 10px;
-    }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
 
-    img {
-            max-width: 500px;
-            border: 2px solid #333;
-            border-radius: 10px;       
-    }
+        h1 {
+            font-size: 30px;
+        }
 
-    table {
-        width: 100%;
-        background-color: #f2f2f2;
-        border-collapse: collapse;
-    }
+        h2 {
+            font-size: 24px;
+        }
 
-    th, td {
-        border: 1px solid #000;
-        padding: 8px;
-        text-align: center;
-    }
+        h3 {
+            font-size: 18px;
+        }
 
-    table.menu {
-        width: 100%;
-        background-color: #008000;
-    }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
 
-    table.menu td {
-        border: 0;
-        text-align: center;
-        padding: 8px;
-    }
+        td,tr,li{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
 
-    table.menu a {
-        text-decoration: none;
-        color: white;
-    }
-</style>
+        li {
+            display: inline;
+            margin: 10px;
+        }
+
+        img {
+                max-width: 500px;
+                border: 2px solid #333;
+                border-radius: 10px;       
+        }
+
+        table {
+            width: 100%;
+            background-color: #f2f2f2;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        table.menu {
+            width: 100%;
+            background-color: #008000;
+        }
+
+        table.menu td {
+            border: 0;
+            text-align: center;
+            padding: 8px;
+        }
+
+        table.menu a {
+            text-decoration: none;
+            color: white;
+        }
+        table.guardians{
+            margin-bottom: 20px;
+        }
+    </style>
 
 </head>
 <body>
     <h1>Опікуни</h1>
 
-    <table class="menu">
+     <table class="menu">
         <tr>
-            <td><a href="index.html">Головна</a></td>
+           <td><a href="index.html">Головна</a></td>
+            <td><a href="tickets.html">Замовити квитки</a></td>
             <td><a href="animals.html">Наші тварини</a></td>
             <td><a href="schedule.html">Розклад виставок</a></td>
-            <td><a href="gallery.html">Галерея</a></td>
+            <td><a href="gallery.html">Зображення</a></td>
             <td><a href="contact.html">Контакти</a></td>
-            <td><a href="excursions.html">Екскурсії</a></td>
             <td><a href="oceanarium.html">Океанаріум</a></td>
+            <td><a href="excursions.html">Екскурсії</a></td>
             <td><a href="support.html">Допомога зоопарку</a></td>
-            <td><a href="tickets.html">Замовити квитки</a></td>
+            <td><a href="guardians.html">Опікуни</a></td>
         </tr>
     </table>
 
     <h2>Наші опікуни</h2>
 
-    <table>
+    <table class="guardians">
         <tr>
             <th>Прізвище та ім'я опікуна</th>
             <th>Телефон</th>
@@ -96,6 +129,7 @@
             <td>gymnasium55@example.com</td>
         </tr>
     </table>
+
     <img src="../source/guardians1.png" alt="Опікуни тварин" >
     <img src="../source/guardians2.png" alt="Опікуни тварин" >
     <img src="../source/guardians3.png" alt="Опікуни тварин" >
